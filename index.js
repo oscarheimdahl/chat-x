@@ -1,8 +1,10 @@
-const express = require('express');
-const app = express();
+console.log('Hello World');
 
-app.get('/', (req, res) => {
-  res.json({ msg: 'hej' });
-});
+// const express = require('express');
+// const app = express();
 
-app.listen(3000);
+// app.get('/', (req, res) => {
+//   res.json({ msg: 'hej' });
+// });
+
+// app.listen(3000);
