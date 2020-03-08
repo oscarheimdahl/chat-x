@@ -1,0 +1,34 @@
+.message-wrapper
+    display grid
+    width: calc(100% - 20px)
+    padding 5px 10px
+    // background: red
+
+    .message-body
+        display: grid
+        justify-content: end
+        max-width 60%
+
+    .message-own
+        justify-items: end
+        justify-self: end
+        .message-content
+            background: turquoise
+            border-bottom-right-radius: 0px
+
+    .message-other
+        justify-items: start
+        justify-self: start
+        .message-content
+            background: #aaa
+            border-bottom-left-radius: 0px
+
+    .message-content
+        position:relative
+        display inline-block
+        top: 5px
+        padding: 10px
+        border-radius: 10px
+
+    .message-username
+        color: darkgray

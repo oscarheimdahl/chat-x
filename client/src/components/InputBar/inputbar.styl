@@ -1,0 +1,43 @@
+brad = 8px
+
+.inputbar
+    bottom: 0
+    width: 100%
+
+    form
+        height:     50px
+        width: 100%
+        display: flex
+        align-items: center
+
+        *
+                display: block
+                outline: none
+                border: none
+                font-size: 20px
+
+        input
+            resize: none;
+            padding-left: 10px
+            // padding-top: 10px
+            height: 100%
+            flex-grow: 1
+            min-height: calc(100% - 2px)
+            max-height: 300px
+            border: 1px solid black
+            border-radius: brad
+            margin-right: 10px
+
+        button 
+            width: 150px
+            height: 100%
+            border-radius: brad
+            transition-duration: 200ms
+        
+        .button-enabled
+            background:turquoise
+            color: white
+        .button-disabled
+            background:lightgray
+            color: white
+

@@ -1,9 +1,15 @@
-const express = require('express');
-require('dotenv').config();
-const app = express();
+var app = require('express')();
+var http = require('http').createServer(app);
+var io = require('socket.io')(http);
 
-app.get('/', (req, res) => {
-  res.json({ msg: 'hej' });
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(process.env.PORT || 3000);
+io.on('connect', () => {
+  console.log('object');
+});
+
+http.listen(3000, function() {
+  console.log('listening on *:3000');
+});
